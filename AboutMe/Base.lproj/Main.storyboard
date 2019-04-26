@@ -57,18 +57,27 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geF-tc-h4t">
+                                <rect key="frame" x="159" y="823" width="96" height="30"/>
+                                <state key="normal" title="Introduce Self"/>
+                                <connections>
+                                    <action selector="introduceSelfButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tyA-vY-yex"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="geF-tc-h4t" secondAttribute="bottom" constant="9" id="HWN-T3-jnY"/>
                             <constraint firstItem="P2s-Av-8Cw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Wv0-UZ-ug4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P2s-Av-8Cw" secondAttribute="trailing" constant="16" id="fGd-Yr-U48"/>
                             <constraint firstItem="P2s-Av-8Cw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fxo-8X-eKl"/>
+                            <constraint firstItem="geF-tc-h4t" firstAttribute="centerX" secondItem="P2s-Av-8Cw" secondAttribute="centerX" id="gXO-vh-KVc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="hobbiesLabel" destination="R3u-IG-igW" id="nFA-Xt-Avf"/>
-                        <outlet property="nameLabel" destination="JvZ-S8-1Mg" id="HQ5-LT-Tqs"/>
+                        <outlet property="hobbiesLabel" destination="XJZ-iB-sEW" id="SFY-GK-Nab"/>
+                        <outlet property="nameLabel" destination="PaF-bY-qDU" id="NVN-WN-JAJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
